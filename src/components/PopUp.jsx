@@ -8,7 +8,7 @@ const PopUp = () => {
     useEffect(()=>{
         if(isOpen){
             alert("Következzen egy kis reklám! 🤑")
-
+            setCounter(3)
             const intervalId = setInterval(() => {    
                 setCounter(elozo => {
                     if(elozo - 1 == 0){
